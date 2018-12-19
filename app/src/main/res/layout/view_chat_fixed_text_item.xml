@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created and developed by RnDity sp. z o.o. in 2018.
+  ~ Copyright © 2018 RnDity sp. z o.o. All rights reserved.
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:layout_marginTop="@dimen/offset_medium"
+        android:id="@+id/textEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_text"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:enabled="false"
+        android:inputType="text"
+        android:minWidth="@dimen/dialog_min_width"
+        android:padding="@dimen/offset_medium"
+        android:textColor="@color/white"
+        tools:ignore="LabelFor" />
+
+</merge>

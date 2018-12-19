@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created and developed by RnDity sp. z o.o. in 2018.
+  ~ Copyright © 2018 RnDity sp. z o.o. All rights reserved.
+  -->
+
+<resources>
+    <dimen name="offset_xsmall">5dp</dimen>
+    <dimen name="offset_small">8dp</dimen>
+    <dimen name="offset_medium">10dp</dimen>
+    <dimen name="offset_regular">12dp</dimen>
+    <dimen name="offset_xlarge">20dp</dimen>
+    <dimen name="offset_large">15dp</dimen>
+
+    <dimen name="avatar_size">65dp</dimen>
+    <dimen name="dialog_max_width">200dp</dimen>
+    <dimen name="dialog_min_width">150dp</dimen>
+
+
+    <dimen name="rect_size">56dp</dimen>
+    <dimen name="rect_size_small">50dp</dimen>
+    <dimen name="rect_size_xsmall">40dp</dimen>
+    <dimen name="button_width_small">120dp</dimen>
+    <dimen name="rect_zero">0dp</dimen>
+    <dimen name="rect_sto">150dp</dimen>
+    <dimen name="rect_corner">25dp</dimen>
+    <dimen name="button_width_medium">150dp</dimen>
+
+</resources>

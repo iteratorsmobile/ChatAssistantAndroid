@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created and developed by RnDity sp. z o.o. in 2018.
+  ~ Copyright © 2018 RnDity sp. z o.o. All rights reserved.
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00">
+
+        <TextView
+            android:id="@+id/progressView"
+            android:padding="20dp"
+            android:text="Loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</merge>

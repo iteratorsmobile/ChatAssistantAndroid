@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created and developed by RnDity sp. z o.o. in 2018.
+  ~ Copyright © 2018 RnDity sp. z o.o. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rndity.chatassistant.onboarding.MainActivity">
+
+    <com.rndity.chatassistant.ChatView
+        android:id="@+id/chatView"
+        android:layout_marginStart="@dimen/offset_medium"
+        android:layout_marginEnd="@dimen/offset_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/historyButtonsView"/>
+
+    <LinearLayout
+        android:id="@+id/historyButtonsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        
+        <Button
+            android:id="@+id/prevHistoryView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="prev"
+            tools:ignore="ButtonStyle" />
+
+        <TextView
+            android:id="@+id/historySize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="History: 0"/>
+
+        <Button
+            android:id="@+id/nextHistoryView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"
+            tools:ignore="ButtonStyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
