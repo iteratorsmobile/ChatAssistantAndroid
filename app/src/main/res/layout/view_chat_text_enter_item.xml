@@ -16,6 +16,7 @@
         android:gravity="end"
         android:inputType="text"
         android:textDirection="anyRtl"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no" />
 
 </merge>

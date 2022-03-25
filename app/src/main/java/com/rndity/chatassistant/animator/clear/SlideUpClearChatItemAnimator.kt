@@ -15,7 +15,7 @@ import com.rndity.chatassistant.animator.ViewPropertyAnimatorHandler
 class SlideUpClearChatItemAnimator : ClearChatItemAnimator() {
 
     override fun animate(viewsToClear: List<View>, parentSize: Size): AnimatorHandler {
-        val offset = viewsToClear.maxBy { view -> view.bottom }!!.bottom
+        val offset = viewsToClear.maxOf { view -> view.bottom }
         val result = mutableListOf<ViewPropertyAnimator>()
         for (view in viewsToClear) {
             result.add(view.animate().translationYBy(-offset.toFloat()).setDuration(defaultDuration()))

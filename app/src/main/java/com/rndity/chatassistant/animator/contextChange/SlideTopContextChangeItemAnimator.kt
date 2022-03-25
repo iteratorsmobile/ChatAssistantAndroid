@@ -15,8 +15,8 @@ import com.rndity.chatassistant.animator.ViewPropertyAnimatorHandler
 class SlideTopContextChangeItemAnimator : ContextChangeItemAnimator() {
 
     override fun animate(viewsToClear: List<View>, viewsToShow: List<View>, parentSize: Size): AnimatorHandler {
-        val offsetExit = viewsToClear.maxBy { view -> view.bottom }!!.bottom
-        val offsetEnter = viewsToShow.maxBy { view -> view.bottom }!!.bottom
+        val offsetExit = viewsToClear.maxOf { view -> view.bottom }
+        val offsetEnter = viewsToShow.maxOf { view -> view.bottom }
 
         for (viewToShow in viewsToShow) {
             viewToShow.translationY = -offsetEnter.toFloat()

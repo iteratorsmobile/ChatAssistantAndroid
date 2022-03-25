@@ -7,7 +7,7 @@ package com.rndity.chatassistant.onboarding
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -72,10 +72,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onSaveInstanceState(outState: Bundle?) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-
-        outState?.putSerializable(keyFlowState, flow.getState())
+        outState.putSerializable(keyFlowState, flow.getState())
     }
 
     private fun hideKeyboard() {
